@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/hrowett/snake-game/precache-manifest.6a906f2c9e9b55921b4b7d93765422a4.js"
+  "/hrowett/snake/precache-manifest.737d7558f553eb002b94dc6c43924706.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/hrowett/snake-game/index.html", {
+workbox.routing.registerNavigationRoute("/hrowett/snake/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
