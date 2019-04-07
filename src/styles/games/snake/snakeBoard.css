@@ -1,0 +1,22 @@
+.snakeBoardWrapper {
+    position: relative;
+    display: inline-block;
+    margin: 40px 70px 40px 100px;
+    overflow: hidden;
+    right: 10%;
+}
+
+.snakeBoard {
+    display: table;
+    border-collapse: collapse;
+}
+
+.snakeBoardRow {
+    display: table-row;
+}
+
+.snakeBoardCell {
+    display: table-cell;
+    border: 1px solid black;
+    background-color: whitesmoke;
+}

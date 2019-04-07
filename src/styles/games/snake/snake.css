@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.activeSnakeContainer {
+    border: 20px outset #999990;
+    min-height: 100vh;
+}
+
+.snakeContainer {
+    border: 20px outset #999990;
+    min-height: 100vh;
+}
+
+.snakeTitle {
+    margin: 20px;
+    font-family: 'Zorque';
+    font-size: 60px;
+}
+
+.snakeHighScore {
+    margin: 10px;
+    font-family: 'Zorque';
+    font-size: 25px;
+}
+
+.snakeCurrentScore {
+    margin: 10px;
+    font-family: 'Zorque';
+    font-size: 25px;
+}
+
+.snakeHelp {
+	margin: 10px;
+    font-family: 'Zorque';
+    font-size: 20px;
+}
+
+.snakeGame {
+    display: inline-block;
+    position: relative;
+}
+
+.sliderComponent {
+    transform: translateY(25%);
+}
+
+

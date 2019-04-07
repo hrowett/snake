@@ -1,0 +1,22 @@
+.sliderComponent {
+    padding: 20px;
+    float: left;
+    display: inline-block;
+}
+
+.rangeSlider {
+    position: relative;
+}
+
+.sliderValue {
+    position: relative;
+    font-family: 'Zorque';
+    font-size: 15px;
+}
+
+.sliderLabel {
+    position: relative;
+    font-family: 'Zorque';
+    font-size: 15px;
+}
+

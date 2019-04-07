@@ -1,0 +1,22 @@
+.header {
+    background-color: white;
+    text-align: center;
+}
+
+.mainHeaderText {
+    font-family: 'Zorque';
+    font-size: 100px;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 40px;
+}
+
+.subHeaderText {
+    font-family: 'Zorque';
+    font-size: 30px;
+}
+
+
+
