@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import './app.css';
-import HomePage from './components/homepage/HomePage';
+import Snake from './components/games/snake/components/SnakeGameProvider';
 
 class App extends Component {
 
   render() {
     return (
       <div className="app">
-          <HomePage />
+        <div className="snakeGameContainer">
+          <Snake />
+        </div>
       </div>
     );
   }

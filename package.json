@@ -1,8 +1,8 @@
 {
-  "name": "gamesite",
+  "name": "snake",
   "version": "0.1.0",
   "private": false,
-  "homepage": "",
+  "homepage": "https://hrowett.github.io/snake",
   "dependencies": {
     "html-webpack-plugin": "^3.2.0",
     "react": "^16.7.0",
