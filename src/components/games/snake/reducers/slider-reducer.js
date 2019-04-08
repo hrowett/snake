@@ -1,7 +1,7 @@
-import {MIN_GAME_SPEED, INITIAL_BOARD_SIZE} from "../constants/constants";
+import {INITIAL_GAME_SPEED, INITIAL_BOARD_SIZE} from "../constants/constants";
 
 const INITIAL_STATE = {
-    value: MIN_GAME_SPEED,
+    value: INITIAL_GAME_SPEED,
     boardSize: INITIAL_BOARD_SIZE,
 };
 
