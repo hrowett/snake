@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63665985-6363-4803-8295-764b560852c9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/snake/constants/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/snake/constants/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/snake/reducers/slider-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/snake/reducers/slider-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/games/snake/snake.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/games/snake/snake.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/header/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/homepage/homepage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/slider/slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/slider/slider.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,23 +17,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SnakeGameProvider.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/games/snake/components/SnakeGameProvider.js">
+      <file leaf-file-name="food.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/games/snake/food.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+            <state relative-caret-position="17">
+              <caret line="1" column="24" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SnakeGame.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/games/snake/components/SnakeGame.js">
+      <file leaf-file-name="snakeBody.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/games/snake/snakeBody.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="slider.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/styles/slider/slider.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="656">
-              <caret line="181" column="14" lean-forward="true" selection-start-line="181" selection-start-column="14" selection-end-line="181" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="289">
+              <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -54,11 +58,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="slider-reducer.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="slider-reducer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/games/snake/reducers/slider-reducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+            <state relative-caret-position="391">
+              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="snake.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/games/snake/snake.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="snakeBoard.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/games/snake/snakeBoard.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -68,36 +90,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rangeslider.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/react-rangeslider/umd/rangeslider.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="554" column="6" selection-start-line="554" selection-start-column="6" selection-end-line="554" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="3856" selection-start-column="3851" selection-end-column="3856" />
             </state>
           </provider>
         </entry>
@@ -123,7 +115,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>block</find>
       <find>brick</find>
       <find>press space</find>
       <find>press sp</find>
@@ -153,6 +144,7 @@
       <find>snake</find>
       <find>MIN_GAME_SPEED</find>
       <find>value</find>
+      <find>zorque</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -161,7 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/games/snake/snake/reducers/slider-reducer.js" />
         <option value="$PROJECT_DIR$/src/games/snake/snake/reducers/index.js" />
         <option value="$PROJECT_DIR$/src/games/snake/styles/snakeSliders.css" />
         <option value="$PROJECT_DIR$/src/games/utilities/slider/Slider.js" />
@@ -188,7 +179,6 @@
         <option value="$PROJECT_DIR$/src/styles/buttons/buttons.css" />
         <option value="$PROJECT_DIR$/src/components/games/somethingelse/SomethingElse.js" />
         <option value="$PROJECT_DIR$/src/styles/header/header.css" />
-        <option value="$PROJECT_DIR$/src/styles/games/snake/snake.css" />
         <option value="$PROJECT_DIR$/src/components/games/snake/components/SnakeGame.js" />
         <option value="$PROJECT_DIR$/src/components/games/breakout/actions/actions.js" />
         <option value="$PROJECT_DIR$/src/components/games/snake/actions/actions.js" />
@@ -212,6 +202,8 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/games/snake/constants/constants.js" />
         <option value="$PROJECT_DIR$/src/components/games/snake/reducers/slider-reducer.js" />
+        <option value="$PROJECT_DIR$/src/styles/games/snake/snake.css" />
+        <option value="$PROJECT_DIR$/src/styles/slider/slider.css" />
       </list>
     </option>
   </component>
@@ -236,9 +228,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
-    <option name="width" value="976" />
-    <option name="height" value="1048" />
+    <option name="x" value="1190" />
+    <option name="width" value="1220" />
+    <option name="height" value="1310" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -286,37 +278,29 @@
               <item name="snake" type="b2602c69:ProjectViewProjectNode" />
               <item name="snake" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="games" type="462c0819:PsiDirectoryNode" />
-              <item name="snake" type="462c0819:PsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="snake" type="b2602c69:ProjectViewProjectNode" />
               <item name="snake" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
               <item name="games" type="462c0819:PsiDirectoryNode" />
-              <item name="snake" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="snake" type="b2602c69:ProjectViewProjectNode" />
               <item name="snake" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
               <item name="games" type="462c0819:PsiDirectoryNode" />
               <item name="snake" type="462c0819:PsiDirectoryNode" />
-              <item name="constants" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="snake" type="b2602c69:ProjectViewProjectNode" />
               <item name="snake" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="games" type="462c0819:PsiDirectoryNode" />
-              <item name="snake" type="462c0819:PsiDirectoryNode" />
-              <item name="reducers" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+              <item name="slider" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -430,15 +414,15 @@
       <workItem from="1552335851643" duration="2266000" />
       <workItem from="1552834799949" duration="314000" />
       <workItem from="1554655674662" duration="3473000" />
-      <workItem from="1554751170850" duration="702000" />
+      <workItem from="1554751170850" duration="1456000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75245000" />
+    <option name="totallyTimeSpent" value="75999000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -454,7 +438,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1671875" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20898438" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -535,13 +519,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/slider/slider.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -554,13 +531,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
           <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/header/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -644,9 +614,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/games/breakout/components/BreakoutGameHR.js" />
-    <entry file="file://$PROJECT_DIR$/src/styles/games/snake/snakeBody.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/games/breakout/breakoutBlock.css" />
     <entry file="file://$PROJECT_DIR$/src/styles/games/breakout/breakoutGame.css" />
     <entry file="file://$PROJECT_DIR$/src/components/games/breakout/constants/constants.js" />
@@ -663,13 +630,6 @@
     <entry file="file://$PROJECT_DIR$/src/components/games/breakout/components/Ball.js" />
     <entry file="file://$PROJECT_DIR$/src/components/games/breakout/components/BreakoutBoard.js" />
     <entry file="file://$PROJECT_DIR$/src/styles/games/breakout/breakoutBall.css" />
-    <entry file="file://$PROJECT_DIR$/src/styles/games/snake/food.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="24" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/homepage/HomePage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -684,20 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/games/snake/snake.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/games/snake/snakeBoard.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -770,10 +716,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/header/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/games/snake/reducers/slider-reducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        <state relative-caret-position="391">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/games/snake/snake.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/games/snake/snakeBoard.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/games/snake/food.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/games/snake/snakeBody.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/slider/slider.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
         </state>
       </provider>
     </entry>
