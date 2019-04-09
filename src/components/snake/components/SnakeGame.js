@@ -5,9 +5,9 @@ import {INITIAL_DIRECTION, MAX_GAME_SPEED, MIN_GAME_SPEED, MIN_BOARD_SIZE, MAX_B
 import Board from './SnakeBoard';
 import Snake from './SnakeBody';
 import Food from './SnakeFood';
-import Slider from '../../../slider/Slider';
+import Slider from '../../slider/Slider';
 import { moveSnake, setFood, setDirection, prependSnake, newGame, loseGame, incrementScore, changeBoardSize, changeGameSpeed } from '../actions/actions';
-import '../../../../styles/games/snake/snake.css';
+import '../../../styles/snake/snake.css';
 
 class SnakeGame extends Component {
 	constructor() {

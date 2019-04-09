@@ -2,21 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63665985-6363-4803-8295-764b560852c9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/henry.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/snake/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/snake/actions/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/snake/components/Food.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/snake/components/SnakeFood.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/snake/components/SnakeBoard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/snake/components/SnakeBoard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/snake/components/SnakeBody.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/snake/components/SnakeBody.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/snake/components/SnakeGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/snake/components/SnakeGame.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/snake/components/SnakeGameProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/snake/components/SnakeGameProvider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/snake/constants/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/snake/constants/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/snake/reducers/food-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/snake/reducers/food-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/snake/reducers/game-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/snake/reducers/game-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/snake/reducers/slider-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/snake/reducers/slider-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/snake/reducers/snake-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/snake/reducers/snake-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/snake/utils/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/games/snake/food.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/games/snake/snakeFood.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/snake/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/snake/actions/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/snake/components/SnakeBoard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/snake/components/SnakeBoard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/snake/components/SnakeBody.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/snake/components/SnakeBody.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/snake/components/SnakeFood.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/snake/components/SnakeFood.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/snake/components/SnakeGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/snake/components/SnakeGame.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/snake/components/SnakeGameProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/snake/components/SnakeGameProvider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/snake/constants/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/snake/constants/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/snake/reducers/food-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/snake/reducers/food-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/snake/reducers/game-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/snake/reducers/game-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/snake/reducers/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/snake/reducers/reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/snake/reducers/slider-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/snake/reducers/slider-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/snake/reducers/snake-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/snake/reducers/snake-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/games/snake/snake.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/snake/snake.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/games/snake/snakeBoard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/snake/snakeBoard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/games/snake/snakeBody.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/snake/snakeBody.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/games/snake/snakeFood.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/snake/snakeFood.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,7 +30,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="SnakeGameProvider.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/games/snake/components/SnakeGameProvider.js">
+        <entry file="file://$PROJECT_DIR$/src/components/snake/components/SnakeGameProvider.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
               <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
@@ -40,7 +42,7 @@
         </entry>
       </file>
       <file leaf-file-name="constants.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/games/snake/constants/constants.js">
+        <entry file="file://$PROJECT_DIR$/src/components/snake/constants/constants.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
               <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
@@ -49,7 +51,7 @@
         </entry>
       </file>
       <file leaf-file-name="food-reducer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/games/snake/reducers/food-reducer.js">
+        <entry file="file://$PROJECT_DIR$/src/components/snake/reducers/food-reducer.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
               <caret line="3" selection-start-line="3" selection-end-line="3" />
@@ -58,7 +60,7 @@
         </entry>
       </file>
       <file leaf-file-name="game-reducer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/games/snake/reducers/game-reducer.js">
+        <entry file="file://$PROJECT_DIR$/src/components/snake/reducers/game-reducer.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
               <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
@@ -67,7 +69,7 @@
         </entry>
       </file>
       <file leaf-file-name="reducers.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/games/snake/reducers/reducers.js">
+        <entry file="file://$PROJECT_DIR$/src/components/snake/reducers/reducers.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="6" column="35" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="35" />
@@ -76,10 +78,10 @@
         </entry>
       </file>
       <file leaf-file-name="SnakeGame.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/games/snake/components/SnakeGame.js">
+        <entry file="file://$PROJECT_DIR$/src/components/snake/components/SnakeGame.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="76" column="16" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
+            <state relative-caret-position="238">
+              <caret line="89" column="31" lean-forward="true" selection-start-line="89" selection-start-column="31" selection-end-line="89" selection-end-column="31" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -88,7 +90,7 @@
         </entry>
       </file>
       <file leaf-file-name="slider-reducer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/games/snake/reducers/slider-reducer.js">
+        <entry file="file://$PROJECT_DIR$/src/components/snake/reducers/slider-reducer.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
               <caret line="3" column="58" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
@@ -97,7 +99,7 @@
         </entry>
       </file>
       <file leaf-file-name="snake-reducer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/games/snake/reducers/snake-reducer.js">
+        <entry file="file://$PROJECT_DIR$/src/components/snake/reducers/snake-reducer.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
               <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
@@ -106,7 +108,7 @@
         </entry>
       </file>
       <file leaf-file-name="SnakeBody.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/games/snake/components/SnakeBody.js">
+        <entry file="file://$PROJECT_DIR$/src/components/snake/components/SnakeBody.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
               <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
@@ -126,7 +128,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>press sp</find>
       <find>you lost</find>
       <find>canvas.get</find>
       <find>ctx</find>
@@ -156,6 +157,7 @@
       <find>zorque</find>
       <find>snakeFood</find>
       <find>checkColli</find>
+      <find>checkFood</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -164,7 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/games/utilities/slider/styles/slider.css" />
         <option value="$PROJECT_DIR$/src/header/styles/header.css" />
         <option value="$PROJECT_DIR$/src/header/Header.js" />
         <option value="$PROJECT_DIR$/src/games/snake/styles/snake.css" />
@@ -215,6 +216,7 @@
         <option value="$PROJECT_DIR$/src/components/games/snake/reducers/slider-reducer.js" />
         <option value="$PROJECT_DIR$/src/components/games/snake/reducers/snake-reducer.js" />
         <option value="$PROJECT_DIR$/src/components/games/snake/components/SnakeGame.js" />
+        <option value="$PROJECT_DIR$/src/components/snake/components/SnakeGame.js" />
       </list>
     </option>
   </component>
@@ -274,87 +276,7 @@
               <item name="snake" type="b2602c69:ProjectViewProjectNode" />
               <item name="snake" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="games" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="snake" type="b2602c69:ProjectViewProjectNode" />
-              <item name="snake" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="games" type="462c0819:PsiDirectoryNode" />
-              <item name="snake" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="snake" type="b2602c69:ProjectViewProjectNode" />
-              <item name="snake" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="games" type="462c0819:PsiDirectoryNode" />
-              <item name="snake" type="462c0819:PsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="snake" type="b2602c69:ProjectViewProjectNode" />
-              <item name="snake" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="games" type="462c0819:PsiDirectoryNode" />
-              <item name="snake" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="snake" type="b2602c69:ProjectViewProjectNode" />
-              <item name="snake" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="games" type="462c0819:PsiDirectoryNode" />
-              <item name="snake" type="462c0819:PsiDirectoryNode" />
-              <item name="constants" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="snake" type="b2602c69:ProjectViewProjectNode" />
-              <item name="snake" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="games" type="462c0819:PsiDirectoryNode" />
-              <item name="snake" type="462c0819:PsiDirectoryNode" />
-              <item name="reducers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="snake" type="b2602c69:ProjectViewProjectNode" />
-              <item name="snake" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="slider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="snake" type="b2602c69:ProjectViewProjectNode" />
-              <item name="snake" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="snake" type="b2602c69:ProjectViewProjectNode" />
-              <item name="snake" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="games" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="snake" type="b2602c69:ProjectViewProjectNode" />
-              <item name="snake" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="games" type="462c0819:PsiDirectoryNode" />
-              <item name="snake" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="snake" type="b2602c69:ProjectViewProjectNode" />
-              <item name="snake" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="slider" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -381,17 +303,17 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\henry\Projects\gamesite\src\styles\games\snake" />
-      <recent name="C:\Users\henry\Projects\gamesite\src\styles\slider" />
-      <recent name="C:\Users\henry\Projects\gamesite\src\styles\header" />
-      <recent name="C:\Users\henry\Projects\gamesite\src\components\slider" />
-      <recent name="C:\Users\henry\Projects\gamesite\src\components" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\henry\Projects\gamesite\src" />
       <recent name="C:\Users\henry\Projects\gamesite\src\styles\games\snake" />
       <recent name="C:\Users\henry\Projects\gamesite\src\games\snake" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\henry\Projects\snake\src\styles" />
+      <recent name="C:\Users\henry\Projects\snake\src\components" />
+      <recent name="C:\Users\henry\Projects\gamesite\src\styles\games\snake" />
+      <recent name="C:\Users\henry\Projects\gamesite\src\styles\slider" />
+      <recent name="C:\Users\henry\Projects\gamesite\src\styles\header" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -468,12 +390,12 @@
       <workItem from="1552335851643" duration="2266000" />
       <workItem from="1552834799949" duration="314000" />
       <workItem from="1554655674662" duration="3473000" />
-      <workItem from="1554751170850" duration="3705000" />
+      <workItem from="1554751170850" duration="3975000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78248000" />
+    <option name="totallyTimeSpent" value="78518000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="781" height="830" extended-state="0" />
@@ -696,7 +618,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/games/snake/snakeBody.css">
+    <entry file="file://$PROJECT_DIR$/src/styles/snake/snakeBody.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/slider/slider.css">
@@ -706,56 +628,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/games/snake/actions/actions.js">
+    <entry file="file://$PROJECT_DIR$/src/components/snake/actions/actions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/games/snake/snake.css">
+    <entry file="file://$PROJECT_DIR$/src/styles/snake/snake.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
           <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/games/snake/snakeBoard.css">
+    <entry file="file://$PROJECT_DIR$/src/styles/snake/snakeBoard.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/games/snake/snakeFood.css">
+    <entry file="file://$PROJECT_DIR$/src/styles/snake/snakeFood.css">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="11" selection-start-column="11" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/games/snake/components/SnakeFood.js">
+    <entry file="file://$PROJECT_DIR$/src/components/snake/components/SnakeFood.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="10" column="62" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/games/snake/components/SnakeBoard.js">
+    <entry file="file://$PROJECT_DIR$/src/components/snake/components/SnakeBoard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/games/snake/components/SnakeBody.js">
+    <entry file="file://$PROJECT_DIR$/src/components/snake/components/SnakeBody.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/games/snake/components/SnakeGameProvider.js">
+    <entry file="file://$PROJECT_DIR$/src/components/snake/components/SnakeGameProvider.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
@@ -765,42 +687,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/games/snake/constants/constants.js">
+    <entry file="file://$PROJECT_DIR$/src/components/snake/constants/constants.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/games/snake/reducers/food-reducer.js">
+    <entry file="file://$PROJECT_DIR$/src/components/snake/reducers/food-reducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/games/snake/reducers/game-reducer.js">
+    <entry file="file://$PROJECT_DIR$/src/components/snake/reducers/game-reducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/games/snake/reducers/slider-reducer.js">
+    <entry file="file://$PROJECT_DIR$/src/components/snake/reducers/slider-reducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="58" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/games/snake/reducers/snake-reducer.js">
+    <entry file="file://$PROJECT_DIR$/src/components/snake/reducers/snake-reducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/games/snake/reducers/reducers.js">
+    <entry file="file://$PROJECT_DIR$/src/components/snake/reducers/reducers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="6" column="35" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="35" />
@@ -810,14 +732,14 @@
     <entry file="file://$PROJECT_DIR$/src/components/games/snake/utils/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="1" lean-forward="true" selection-end-line="2" selection-end-column="1" />
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/games/snake/components/SnakeGame.js">
+    <entry file="file://$PROJECT_DIR$/src/components/snake/components/SnakeGame.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="76" column="16" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
+        <state relative-caret-position="238">
+          <caret line="89" column="31" lean-forward="true" selection-start-line="89" selection-start-column="31" selection-end-line="89" selection-end-column="31" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

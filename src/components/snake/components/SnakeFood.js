@@ -1,6 +1,6 @@
 import React from 'react';
 import { SQUARE_SIZE } from '../constants/constants';
-import '../../../../styles/games/snake/snakeFood.css';
+import '../../../styles/snake/snakeFood.css';
 
 /**
  * Returns a <div/> element representing a piece of food.

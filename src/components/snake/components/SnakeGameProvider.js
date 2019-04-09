@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import Game from './SnakeGame';
 import reducer from "../reducers/reducers";
-import '../../../../styles/buttons/buttons.css';
+import '../../../styles/buttons/buttons.css';
 
 /**
  * Uses redux to provide the game to the app.

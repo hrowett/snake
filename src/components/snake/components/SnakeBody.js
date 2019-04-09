@@ -1,6 +1,6 @@
 import React from 'react';
 import {SQUARE_SIZE} from "../constants/constants";
-import '../../../../styles/games/snake/snakeBody.css';
+import '../../../styles/snake/snakeBody.css';
 
 /**
  * Renders snake on top of the board.

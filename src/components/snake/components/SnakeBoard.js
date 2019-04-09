@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../../styles/games/snake/snakeBoard.css';
+import '../../../styles/snake/snakeBoard.css';
 import {SQUARE_SIZE} from '../constants/constants';
 
 /**
