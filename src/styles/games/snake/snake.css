@@ -16,25 +16,25 @@
 
 .snakeTitle {
     margin: 20px;
-    font-family: 'Arial Black';
+    font-family: 'Courier';
     font-size: 60px;
 }
 
 .snakeHighScore {
     margin: 10px;
-    font-family: 'Arial Black';
+    font-family: 'Courier';
     font-size: 25px;
 }
 
 .snakeCurrentScore {
     margin: 10px;
-    font-family: 'Arial Black';
+    font-family: 'Courier';
     font-size: 25px;
 }
 
 .snakeHelp {
 	margin: 10px;
-    font-family: 'Arial Black';
+    font-family: 'Courier';
     font-size: 20px;
 }
 
