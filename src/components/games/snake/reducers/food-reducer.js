@@ -1,3 +1,6 @@
+/**
+ * Adds a new piece of food based on the game state.
+ */
 const INITIAL_STATE = [];
 
 export default function(state = INITIAL_STATE, action) {

@@ -1,5 +1,8 @@
 import {INITIAL_GAME_SPEED, INITIAL_BOARD_SIZE} from "../constants/constants";
 
+/**
+ * Processes any changes to the slider game size or speed.
+ */
 const INITIAL_STATE = {
     value: INITIAL_GAME_SPEED,
     boardSize: INITIAL_BOARD_SIZE,

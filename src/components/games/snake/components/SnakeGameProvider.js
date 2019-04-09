@@ -5,6 +5,10 @@ import Game from './SnakeGame';
 import reducer from "../reducers/reducers";
 import '../../../../styles/buttons/buttons.css';
 
+/**
+ * Uses redux to provide the game to the app.
+ * This enables the re-render cycle to apply the actions.
+ */
 const store = createStore(reducer);
 
 const SnakeGame = () => {

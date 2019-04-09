@@ -4,10 +4,9 @@ import { bindActionCreators } from 'redux';
 import {INITIAL_DIRECTION, MAX_GAME_SPEED, MIN_GAME_SPEED, MIN_BOARD_SIZE, MAX_BOARD_SIZE} from '../constants/constants';
 import Board from './SnakeBoard';
 import Snake from './SnakeBody';
-import Food from './Food';
+import Food from './SnakeFood';
 import Slider from '../../../slider/Slider';
 import { moveSnake, setFood, setDirection, prependSnake, newGame, loseGame, incrementScore, changeBoardSize, changeGameSpeed } from '../actions/actions';
-import { checkCollision } from '../utils/index';
 import '../../../../styles/games/snake/snake.css';
 
 class SnakeGame extends Component {
@@ -19,6 +18,7 @@ class SnakeGame extends Component {
 		this.checkGameLoss = this.checkGameLoss.bind(this);
 		this.handleBoardSizeChange = this.handleBoardSizeChange.bind(this);
 		this.handleGameSpeedChange = this.handleGameSpeedChange.bind(this);
+		this.checkCollision = this.checkCollision.bind(this);
 	}
 
 	componentWillMount() {
@@ -41,11 +41,15 @@ class SnakeGame extends Component {
 				snakeHeadCoords[0] === this.props.slider.boardSize ||
 				snakeHeadCoords[1] === -1 || 
 				snakeHeadCoords[1] === this.props.slider.boardSize ||
-				checkCollision(snakeHeadCoords, snakeCoords.slice(0, -1)))) {
+				this.checkCollision(snakeHeadCoords, snakeCoords.slice(0, -1)))) {
 			clearInterval(this.snakeInterval);
 			this.props.loseGame();
 		}
 	}
+
+    checkCollision(snakeHeadCoords, arrCoords) {
+        return arrCoords.some(coords => coords[0] === snakeHeadCoords[0] && coords[1] === snakeHeadCoords[1]);
+    }
 
 	checkFoodCollision() {
 		const snakeCoords = this.props.snake.coords;
@@ -70,7 +74,7 @@ class SnakeGame extends Component {
 	generateNewFood() {
 		const x = Math.floor(Math.random() * this.props.slider.boardSize);
 		const y = Math.floor(Math.random() * this.props.slider.boardSize);
-		if(checkCollision([x, y], this.props.snake.coords)) this.generateNewFood();
+		if(this.checkCollision([x, y], this.props.snake.coords)) this.generateNewFood();
 		else this.props.setFood([x, y]);
 	}
 

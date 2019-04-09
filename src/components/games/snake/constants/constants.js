@@ -1,3 +1,6 @@
+/**
+ * Constants which the game uses to run.
+ */
 export const INITIAL_BOARD_SIZE = 18;
 export const MAX_BOARD_SIZE = 30;
 export const MIN_BOARD_SIZE = 15;

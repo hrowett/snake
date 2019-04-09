@@ -1,3 +1,6 @@
+/**
+ * Uses the game state to determine game logic.
+ */
 const INITIAL_STATE = {
 	lost: false,
 	score: 0,

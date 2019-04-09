@@ -1,5 +1,8 @@
 import { INITIAL_BOARD_SIZE, INITIAL_DIRECTION } from '../constants/constants';
 
+/**
+ * Actions for snake manipulation.
+ */
 const INITIAL_STATE = {
 	direction: INITIAL_DIRECTION,
 	coords: [

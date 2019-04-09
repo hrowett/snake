@@ -2,6 +2,10 @@ import React from 'react';
 import {SQUARE_SIZE} from "../constants/constants";
 import '../../../../styles/games/snake/snakeBody.css';
 
+/**
+ * Renders snake on top of the board.
+ * The snake will turn red if it runs over the border.
+ */
 export default function(props) {
 
 	return (
