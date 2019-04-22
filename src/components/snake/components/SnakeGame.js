@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import Switch from 'react-switch';
 import { bindActionCreators } from 'redux';
 import {INITIAL_DIRECTION, MAX_GAME_SPEED, MIN_GAME_SPEED, MIN_BOARD_SIZE, MAX_BOARD_SIZE} from '../constants/constants';
 import Board from './SnakeBoard';
 import Snake from './SnakeBody';
 import Food from './SnakeFood';
 import Slider from '../../slider/Slider';
-import { moveSnake, setFood, setDirection, prependSnake, newGame, loseGame, incrementScore, changeBoardSize, changeGameSpeed } from '../actions/actions';
+import { moveSnake, setDirection, prependSnake } from '../actions/snake-actions';
+import { newGame, loseGame, incrementScore } from '../actions/game-actions';
+import { setFood } from '../actions/food-actions';
+import { changeBoardSize, changeGameSpeed} from "../actions/slider-actions";
 import '../../../styles/snake/snake.css';
+import '../../../styles/buttons/switch.css';
 
 class SnakeGame extends Component {
 	constructor() {
@@ -19,6 +24,8 @@ class SnakeGame extends Component {
 		this.handleBoardSizeChange = this.handleBoardSizeChange.bind(this);
 		this.handleGameSpeedChange = this.handleGameSpeedChange.bind(this);
 		this.checkCollision = this.checkCollision.bind(this);
+
+		this.state = {borderless: false};
 	}
 
 	componentWillMount() {
@@ -35,18 +42,28 @@ class SnakeGame extends Component {
 		const snakeCoords = this.props.snake.coords;
 		const snakeHeadCoords = snakeCoords[snakeCoords.length-1];
 
-		// if you collide w a wall or yourself
-		if(!this.props.game.lost && (
-				snakeHeadCoords[0] === -1 || 
+		// if collide with self, then lose
+		if (!this.props.game.lost && this.checkCollision(snakeHeadCoords, snakeCoords.slice(0,-1))) {
+            clearInterval(this.snakeInterval);
+		    this.props.loseGame();
+        }
+
+		// if game is borderless & you collide with wall then lose
+		if(!this.props.game.lost
+            && !this.state.borderless
+            && (snakeHeadCoords[0] === -1 ||
 				snakeHeadCoords[0] === this.props.slider.boardSize ||
-				snakeHeadCoords[1] === -1 || 
-				snakeHeadCoords[1] === this.props.slider.boardSize ||
-				this.checkCollision(snakeHeadCoords, snakeCoords.slice(0, -1)))) {
+				snakeHeadCoords[1] === -1 ||
+				snakeHeadCoords[1] === this.props.slider.boardSize)
+            ) {
 			clearInterval(this.snakeInterval);
 			this.props.loseGame();
 		}
 	}
 
+	/**
+	 * Checks that snake hasn't collided with self
+	 **/
     checkCollision(snakeHeadCoords, arrCoords) {
         return arrCoords.some(coords => coords[0] === snakeHeadCoords[0] && coords[1] === snakeHeadCoords[1]);
     }
@@ -81,35 +98,31 @@ class SnakeGame extends Component {
 	setControls() {
 		document.addEventListener('keydown', e => {
 		    e.preventDefault();
-			const coords = this.props.snake.coords;
-			const x = coords[coords.length-1][0];
-			const y = coords[coords.length-1][1];
-
 			switch(e.keyCode) {
 				case 65: // A key
 				case 37: // left arrow
 					// make sure we're not trying to move into the snake's body
 					// or move outside the boundaries
-					if(this.props.snake.direction !== 'RIGHT' && x !== 0) this.directionOnNextTick = 'LEFT';
+					if(this.props.snake.direction !== 'RIGHT') this.directionOnNextTick = 'LEFT';
 					break;
 				case 68: // D key
 				case 39: // right arrow
-					if(this.props.snake.direction !== 'LEFT' && x !== this.props.slider.boardSize - 1) this.directionOnNextTick = 'RIGHT';
+					if(this.props.snake.direction !== 'LEFT') this.directionOnNextTick = 'RIGHT';
 					break;
 				case 83: // S key
 				case 40: // down arrow
-					if(this.props.snake.direction !== 'UP' && y !== this.props.slider.boardSize - 1) this.directionOnNextTick = 'DOWN';
+					if(this.props.snake.direction !== 'UP') this.directionOnNextTick = 'DOWN';
 					break;
 				case 87: // W key
 				case 38: // up arrow
-					if(this.props.snake.direction !== 'DOWN' && y !== 0) this.directionOnNextTick = 'UP';
+					if(this.props.snake.direction !== 'DOWN') this.directionOnNextTick = 'UP';
 					break;
 				case 32: // space
 					if(this.props.game.lost) this.resetGame();
 					clearInterval(this.snakeInterval);
 					this.snakeInterval = setInterval(() => {
 						this.props.setDirection(this.directionOnNextTick);
-						this.props.moveSnake(this.props.snake);
+						this.props.moveSnake(this.props.snake, this.props.slider.boardSize, this.state.borderless);
 					}, this.props.slider.value);
 					break;
 				default:
@@ -132,6 +145,13 @@ class SnakeGame extends Component {
 
         // this value needs to be changed before being passed into the slider.
 	}
+
+
+    handleBorderlessSwitch = () => {
+        this.setState({
+            borderless: !this.state.borderless,
+        })
+    }
 
 
 	render() {
@@ -161,6 +181,10 @@ class SnakeGame extends Component {
 						<Food coords={this.props.food} size={this.props.slider.boardSize} />
 					</div>
 
+                    {/*<Switch className="borderlessSwitch"*/}
+                            {/*onChange={this.handleBorderlessSwitch}*/}
+                            {/*checked={this.state.borderless}*/}
+                            {/*onColor={'#7cb342'} />*/}
 				</div>
 
 				<p className="snakeHelp">Press spacebar to begin!</p>
