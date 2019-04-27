@@ -1,4 +1,7 @@
 .borderlessSwitch {
     display: inline-block;
+    flex-direction: inherit;
     position: relative;
+    font-family: Courier;
+    font-size: 15px;
 }

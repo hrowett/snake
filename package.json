@@ -4,7 +4,10 @@
   "private": false,
   "homepage": "https://hrowett.github.io/snake",
   "dependencies": {
+    "@material-ui/core": "^3.9.3",
     "html-webpack-plugin": "^3.2.0",
+    "material-ui": "^0.20.2",
+    "npm": "^6.9.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-range-slider": "^0.2.1",

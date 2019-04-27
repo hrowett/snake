@@ -13,6 +13,7 @@ import { setFood } from '../actions/food-actions';
 import { changeBoardSize, changeGameSpeed} from "../actions/slider-actions";
 import '../../../styles/snake/snake.css';
 import '../../../styles/buttons/switch.css';
+import Grid from '@material-ui/core/Grid';
 
 class SnakeGame extends Component {
 	constructor() {
@@ -98,24 +99,29 @@ class SnakeGame extends Component {
 	setControls() {
 		document.addEventListener('keydown', e => {
 		    e.preventDefault();
-			switch(e.keyCode) {
+            const coords = this.props.snake.coords;
+            const x = coords[coords.length-1][0];
+            const y = coords[coords.length-1][1];
+
+            switch(e.keyCode) {
+
 				case 65: // A key
 				case 37: // left arrow
 					// make sure we're not trying to move into the snake's body
 					// or move outside the boundaries
-					if(this.props.snake.direction !== 'RIGHT') this.directionOnNextTick = 'LEFT';
+					if(this.props.snake.direction !== 'RIGHT' || y == 0 || y == this.props.boardSize) this.directionOnNextTick = 'LEFT';
 					break;
 				case 68: // D key
 				case 39: // right arrow
-					if(this.props.snake.direction !== 'LEFT') this.directionOnNextTick = 'RIGHT';
+					if(this.props.snake.direction !== 'LEFT' || y == 0|| y == this.props.boardSize) this.directionOnNextTick = 'RIGHT';
 					break;
 				case 83: // S key
 				case 40: // down arrow
-					if(this.props.snake.direction !== 'UP') this.directionOnNextTick = 'DOWN';
+					if(this.props.snake.direction !== 'UP' || x == 0 || x == this.props.boardSize) this.directionOnNextTick = 'DOWN';
 					break;
 				case 87: // W key
 				case 38: // up arrow
-					if(this.props.snake.direction !== 'DOWN') this.directionOnNextTick = 'UP';
+					if(this.props.snake.direction !== 'DOWN' || x == 0 || x == this.props.boardSize) this.directionOnNextTick = 'UP';
 					break;
 				case 32: // space
 					if(this.props.game.lost) this.resetGame();
@@ -161,31 +167,41 @@ class SnakeGame extends Component {
                 <h1 className="snakeTitle">Snake</h1>
 				<h1 className="snakeCurrentScore">Score: {this.props.game.score}</h1>
 				<h3 className="snakeHighScore">High Score: {this.props.game.highScore}</h3>
-                <div className="snakeGame">
-
+                <Grid container
+                      spacing={24}
+                      direction="row"
+                      justify="center"
+                      alignItems="center"
+                      className="snakeGame">
                     {/*<Slider className="sliderComponent" onChange={this.handleBoardSizeChange}*/}
                             {/*minValue={MIN_BOARD_SIZE}*/}
                             {/*maxValue={MAX_BOARD_SIZE}*/}
                             {/*label="Size"*/}
                             {/*value={this.props.slider.boardSize} />*/}
-
+                    <Grid item >
                     <Slider className="sliderComponent" onChange={this.handleGameSpeedChange}
                             minValue={MIN_GAME_SPEED}
                             maxValue={MAX_GAME_SPEED}
                             label="Speed"
                             value={MAX_GAME_SPEED - this.props.slider.value}/>
-
+                    </Grid>
+                    <Grid item >
 					<div className="snakeBoardWrapper">
 						<Board size={this.props.slider.boardSize}/>
 						<Snake coords={this.props.snake.coords} lost={this.props.game.lost} size={this.props.slider.boardSize}/>
 						<Food coords={this.props.food} size={this.props.slider.boardSize} />
 					</div>
-
-                    {/*<Switch className="borderlessSwitch"*/}
-                            {/*onChange={this.handleBorderlessSwitch}*/}
-                            {/*checked={this.state.borderless}*/}
-                            {/*onColor={'#7cb342'} />*/}
-				</div>
+                    </Grid>
+                    <Grid item >
+                    <div className="borderlessSwitch">
+                    <Switch className="switch"
+                            onChange={this.handleBorderlessSwitch}
+                            checked={this.state.borderless}
+                            onColor={'#7cb342'} />
+                        <p>Borderless?</p>
+                    </div>
+                    </Grid>
+				</Grid>
 
 				<p className="snakeHelp">Press spacebar to begin!</p>
 			</div>

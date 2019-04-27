@@ -1,7 +1,7 @@
 .snakeBoardWrapper {
     position: relative;
     display: inline-block;
-    margin: 40px 70px 40px 100px;
+    margin: 20px -20px 0px 100px;
     overflow: hidden;
     right: 10%;
 }
