@@ -129,7 +129,7 @@ class SnakeGame extends Component {
 					this.snakeInterval = setInterval(() => {
 						this.props.setDirection(this.directionOnNextTick);
 						this.props.moveSnake(this.props.snake, this.props.slider.boardSize, this.state.borderless);
-					}, this.props.slider.value);
+					}, (2*MAX_GAME_SPEED)-this.props.slider.value);
 					break;
 				default:
 					// do nothing
@@ -146,7 +146,7 @@ class SnakeGame extends Component {
 	    // value = value from slider (1 - 100)
         // needs to be changed into the inverse
         // 1 = fastest, 100 = slowest
-        const speed = MAX_GAME_SPEED - value;
+        const speed = value;
         this.props.changeGameSpeed(speed);
 
         // this value needs to be changed before being passed into the slider.
@@ -183,7 +183,7 @@ class SnakeGame extends Component {
                             minValue={MIN_GAME_SPEED}
                             maxValue={MAX_GAME_SPEED}
                             label="Speed"
-                            value={MAX_GAME_SPEED - this.props.slider.value}/>
+                            value={this.props.slider.value}/>
                     </Grid>
                     <Grid item >
 					<div className="snakeBoardWrapper">
