@@ -30,6 +30,11 @@ export default function(state = INITIAL_STATE, action) {
 				...state,
 				score: state.score + 1
 			}
+		case 'BORDERLESS':
+			return {
+				...state,
+				borderless: !state.borderless,
+			}
 	}
 
 	return state;

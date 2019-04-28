@@ -15,3 +15,9 @@ export function incrementScore() {
         type: 'INCREMENT_SCORE'
     }
 }
+
+export function borderless() {
+        return {
+            type: 'BORDERLESS'
+        }
+}

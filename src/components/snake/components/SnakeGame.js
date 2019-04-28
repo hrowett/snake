@@ -8,7 +8,7 @@ import Snake from './SnakeBody';
 import Food from './SnakeFood';
 import Slider from './Slider';
 import { moveSnake, setDirection, prependSnake } from '../actions/snake-actions';
-import { newGame, loseGame, incrementScore } from '../actions/game-actions';
+import { newGame, loseGame, incrementScore, borderless } from '../actions/game-actions';
 import { setFood } from '../actions/food-actions';
 import { changeBoardSize, changeGameSpeed} from "../actions/slider-actions";
 import '../../../styles/snake/snake.css';
@@ -16,8 +16,8 @@ import '../../../styles/buttons/switch.css';
 import Grid from '@material-ui/core/Grid';
 
 class SnakeGame extends Component {
-	constructor() {
-		super();
+    constructor(props) {
+		super(props);
 
 		this.directionOnNextTick = INITIAL_DIRECTION;
 		this.resetGame = this.resetGame.bind(this);
@@ -25,8 +25,6 @@ class SnakeGame extends Component {
 		this.handleBoardSizeChange = this.handleBoardSizeChange.bind(this);
 		this.handleGameSpeedChange = this.handleGameSpeedChange.bind(this);
 		this.checkCollision = this.checkCollision.bind(this);
-
-		this.state = {borderless: false};
 	}
 
 	componentWillMount() {
@@ -51,7 +49,7 @@ class SnakeGame extends Component {
 
 		// if game is borderless & you collide with wall then lose
 		if(!this.props.game.lost
-            && !this.state.borderless
+            && !this.props.game.borderless
             && (snakeHeadCoords[0] === -1 ||
 				snakeHeadCoords[0] === this.props.slider.boardSize ||
 				snakeHeadCoords[1] === -1 ||
@@ -123,13 +121,13 @@ class SnakeGame extends Component {
 				case 38: // up arrow
 					if(this.props.snake.direction !== 'DOWN') this.directionOnNextTick = 'UP';
 					break;
-				case 32: // space
+                case 32: // space
 					if(this.props.game.lost) this.resetGame();
 					clearInterval(this.snakeInterval);
 					this.snakeInterval = setInterval(() => {
 						this.props.setDirection(this.directionOnNextTick);
-						this.props.moveSnake(this.props.snake, this.props.slider.boardSize, this.state.borderless);
-					}, (2*MAX_GAME_SPEED)-this.props.slider.value);
+						this.props.moveSnake(this.props.snake, this.props.slider.boardSize, this.props.game.borderless);
+					}, (2*MAX_GAME_SPEED)-this.props.slider.value); // sets the render interval. For reasonable speeds, the interval is kept high.
 					break;
 				default:
 					// do nothing
@@ -149,9 +147,7 @@ class SnakeGame extends Component {
 
 
     handleBorderlessSwitch = () => {
-        this.setState({
-            borderless: !this.state.borderless,
-        })
+            this.props.borderless();
     }
 
 
@@ -168,11 +164,13 @@ class SnakeGame extends Component {
                       justify="center"
                       alignItems="center"
                       className="snakeGame">
-                    {/*<Slider className="sliderComponent" onChange={this.handleBoardSizeChange}*/}
-                            {/*minValue={MIN_BOARD_SIZE}*/}
-                            {/*maxValue={MAX_BOARD_SIZE}*/}
-                            {/*label="Size"*/}
-                            {/*value={this.props.slider.boardSize} />*/}
+                    {/*<Grid item >
+                    <Slider className="sliderComponent" onChange={this.handleBoardSizeChange}
+                            minValue={MIN_BOARD_SIZE}
+                            maxValue={MAX_BOARD_SIZE}
+                            label="Size"
+                            value={this.props.slider.boardSize} />
+                    </Grid>*/}
                     <Grid item >
                     <Slider className="sliderComponent" onChange={this.handleGameSpeedChange}
                             minValue={MIN_GAME_SPEED}
@@ -191,8 +189,8 @@ class SnakeGame extends Component {
                     <div className="borderlessSwitch">
                     <Switch className="switch"
                             onChange={this.handleBorderlessSwitch}
-                            checked={this.state.borderless}
-                            onColor={'#7cb342'} />
+                            checked={this.props.game.borderless}
+                            onColor={'#7cb342'} /> {/*same color as food elements etc*/}
                         <p>Borderless?</p>
                     </div>
                     </Grid>
@@ -219,6 +217,7 @@ function mapDispatchToProps(dispatch) {
 		incrementScore,
 		changeBoardSize,
         changeGameSpeed,
+        borderless,
 	}, dispatch);
 }
 
