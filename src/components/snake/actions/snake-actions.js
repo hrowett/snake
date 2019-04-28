@@ -11,9 +11,9 @@ export function moveSnake(snake, boardSize, borderless) {
     const headCoords = coords[coords.length-1];
     const headMap = { // map selected direction to next move
         DOWN: borderless ? [headCoords[0], headCoords[1] == boardSize-1 ? 0 : headCoords[1]+1] : /**/ [headCoords[0], headCoords[1]+1],
-        UP: borderless ? [headCoords[0], headCoords[1] == 0 ? boardSize : headCoords[1]-1] : /**/ [headCoords[0], headCoords[1]-1],
+        UP: borderless ? [headCoords[0], headCoords[1] == 0 ? boardSize-1 : headCoords[1]-1] : /**/ [headCoords[0], headCoords[1]-1],
 
-        LEFT: borderless ? [headCoords[0] == 0 ? boardSize : headCoords[0]-1, headCoords[1]] : /**/ [headCoords[0]-1, headCoords[1]],
+        LEFT: borderless ? [headCoords[0] == 0 ? boardSize-1 : headCoords[0]-1, headCoords[1]] : /**/ [headCoords[0]-1, headCoords[1]],
         RIGHT: borderless ? [headCoords[0] == boardSize-1 ? 0 : headCoords[0]+1, headCoords[1]] : /**/ [headCoords[0]+1, headCoords[1]],
     };
 

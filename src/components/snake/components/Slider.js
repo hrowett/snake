@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import RangeSlider from 'react-rangeslider';
 import 'react-rangeslider/lib/index.css'
-import '../../styles/slider/slider.css';
+import '../../../styles/slider/slider.css';
 
 class Slider extends Component {
 

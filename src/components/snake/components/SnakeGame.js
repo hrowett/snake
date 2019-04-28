@@ -6,7 +6,7 @@ import {INITIAL_DIRECTION, MAX_GAME_SPEED, MIN_GAME_SPEED, MIN_BOARD_SIZE, MAX_B
 import Board from './SnakeBoard';
 import Snake from './SnakeBody';
 import Food from './SnakeFood';
-import Slider from '../../slider/Slider';
+import Slider from './Slider';
 import { moveSnake, setDirection, prependSnake } from '../actions/snake-actions';
 import { newGame, loseGame, incrementScore } from '../actions/game-actions';
 import { setFood } from '../actions/food-actions';
@@ -103,25 +103,27 @@ class SnakeGame extends Component {
             const x = coords[coords.length-1][0];
             const y = coords[coords.length-1][1];
 
+            if (x == -1 || y == -1) return;
+
             switch(e.keyCode) {
 
 				case 65: // A key
 				case 37: // left arrow
 					// make sure we're not trying to move into the snake's body
 					// or move outside the boundaries
-					if(this.props.snake.direction !== 'RIGHT' || y == 0 || y == this.props.boardSize) this.directionOnNextTick = 'LEFT';
+					if(this.props.snake.direction !== 'RIGHT') this.directionOnNextTick = 'LEFT';
 					break;
 				case 68: // D key
 				case 39: // right arrow
-					if(this.props.snake.direction !== 'LEFT' || y == 0|| y == this.props.boardSize) this.directionOnNextTick = 'RIGHT';
+					if(this.props.snake.direction !== 'LEFT') this.directionOnNextTick = 'RIGHT';
 					break;
 				case 83: // S key
 				case 40: // down arrow
-					if(this.props.snake.direction !== 'UP' || x == 0 || x == this.props.boardSize) this.directionOnNextTick = 'DOWN';
+					if(this.props.snake.direction !== 'UP') this.directionOnNextTick = 'DOWN';
 					break;
 				case 87: // W key
 				case 38: // up arrow
-					if(this.props.snake.direction !== 'DOWN' || x == 0 || x == this.props.boardSize) this.directionOnNextTick = 'UP';
+					if(this.props.snake.direction !== 'DOWN') this.directionOnNextTick = 'UP';
 					break;
 				case 32: // space
 					if(this.props.game.lost) this.resetGame();
@@ -143,13 +145,8 @@ class SnakeGame extends Component {
 	}
 
 	handleGameSpeedChange = (value) => {
-	    // value = value from slider (1 - 100)
-        // needs to be changed into the inverse
-        // 1 = fastest, 100 = slowest
         const speed = value;
         this.props.changeGameSpeed(speed);
-
-        // this value needs to be changed before being passed into the slider.
 	}
 
 
