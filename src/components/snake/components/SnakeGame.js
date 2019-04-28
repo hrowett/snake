@@ -103,8 +103,6 @@ class SnakeGame extends Component {
             const x = coords[coords.length-1][0];
             const y = coords[coords.length-1][1];
 
-            if (x == -1 || y == -1) return;
-
             switch(e.keyCode) {
 
 				case 65: // A key

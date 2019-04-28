@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="63665985-6363-4803-8295-764b560852c9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/slider/Slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/snake/components/Slider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/snake/actions/snake-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/snake/actions/snake-actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/snake/components/SnakeGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/snake/components/SnakeGame.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SnakeGame.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SnakeGame.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/snake/components/SnakeGame.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="102" selection-start-line="102" selection-end-line="102" />
+            <state relative-caret-position="17">
+              <caret line="105" selection-start-line="105" selection-end-line="105" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -28,7 +26,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="snake-actions.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="snake-actions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/snake/actions/snake-actions.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -203,9 +201,9 @@
         <option value="$PROJECT_DIR$/src/styles/slider/slider.css" />
         <option value="$PROJECT_DIR$/src/styles/snake/snake.css" />
         <option value="$PROJECT_DIR$/src/app.css" />
-        <option value="$PROJECT_DIR$/src/components/snake/components/SnakeGame.js" />
         <option value="$PROJECT_DIR$/src/components/snake/constants/constants.js" />
         <option value="$PROJECT_DIR$/src/components/snake/actions/snake-actions.js" />
+        <option value="$PROJECT_DIR$/src/components/snake/components/SnakeGame.js" />
       </list>
     </option>
   </component>
@@ -441,12 +439,12 @@
       <workItem from="1554655674662" duration="3473000" />
       <workItem from="1554751170850" duration="6176000" />
       <workItem from="1555527444129" duration="2256000" />
-      <workItem from="1555753039621" duration="19929000" />
+      <workItem from="1555753039621" duration="20193000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102904000" />
+    <option name="totallyTimeSpent" value="103168000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -776,27 +774,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/snake/components/Slider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/snake/constants/constants.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/snake/components/SnakeGame.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="102" selection-start-line="102" selection-end-line="102" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -811,6 +792,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/snake/components/Slider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/snake/components/SnakeGame.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
